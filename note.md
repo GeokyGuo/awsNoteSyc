@@ -5,6 +5,12 @@ reduce the administrative overhead of the database.减少数据库的管理开�
 fault-tolerant workloads that can handle interruptions by utilizing checkpoints and state-saving mechanisms容错工作负载，可以通过使用检查点和状态保存机制来处理中断 考点是spot instance
 perform periodic checkpoints in case of an outage.在出现停机时执行定期检查点。
 in case of 防止，万一发生
+backbone network 骨干网
+monolithic applications 整块应用
+microservices components微服务组件
+malicious activity 恶意活动
+break down AWS costs by the hour 按小时细分AWS成本
+
 
 
 密码丢了要retate
@@ -28,6 +34,9 @@ Application Load Balancer 路由http流量的网关
 Gateway Load Balancer
 Network Load Balancer
 AWS Storage Gateway 混合存储，帮助本地程序访问云端数据
+372题需要辨析
+
+PostgreSQL在rds和aurora中都有，但是aurora中不是原生的PostgreSQL语句
 
 AWS Personal Health Dashboard  personalized view
 AWS Service Health Dashboard  general status
@@ -40,15 +49,22 @@ AWS Local Zones
 Edge locations 有什么区别？
 cdn用的是Edge locations
 
+S3 Transfer Acceleration 用到了cdn技术，题目中的关键字backbone network
+
+Elasticity 这个单词描述的主体是 资源获取便利性
+ 
 六个支柱
 operational excellence
   procedures workflows business value
 reliability 
   不要猜容量 自动化变更infra
+
+  
 316 321 322 324 327
 328 c为啥不对？
    business-critical system down
    production system down 有什么区别
 330 331
 333 关键词 caches the data locally
-343 342 347 349 350
+343 342 347 349 350 352 356 368
+372 再辨析一下这几个
