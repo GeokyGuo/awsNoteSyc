@@ -1,40 +1,54 @@
+occur = happen
+network intrusion system 网络入侵系统
+that are input/output (I/O) intensive. io密集型
+reduce the administrative overhead of the database.减少数据库的管理开销。
+fault-tolerant workloads that can handle interruptions by utilizing checkpoints and state-saving mechanisms容错工作负载，可以通过使用检查点和状态保存机制来处理中断 考点是spot instance
+perform periodic checkpoints in case of an outage.在出现停机时执行定期检查点。
+in case of 防止，万一发生
 
-hypervisors 管理程序
-freeing budget for reinvestment in other areas 腾出预算为其他领域的投资
-facial identification 面部识别
-user verification 用户验证
-underlying resources ~= basic resources
-marketing campaigns 营销活动
-in terms of improving time to market 在提高上市时间方面
-maintaining sole ownership of IT hardware. 保持对IT硬件的唯一所有权。
 
-CodeCommit  代码repo，版本控制
-CodeDeploy  就是deploy on serve
+密码丢了要retate
 
-Budgets：  send notifications when spending threshold has been reached
 
-CloudWatch就类似于grafana对cpu磁盘监控那部分
-Detective
-与inspector？
-GuardDuty？
+Server Message Block (SMB) protocol 关键字，选择
+Amazon FSx for Windows File Server
 
-Global Accelerator 支持静态ip，并提高可用性和性能
+programmatic case management through the AWS Support API是大于等于Business plan才支持的
 
-Local Zones：An extension of an AWS Region to more granular locations
+s3和efs文件系统 是默认高可用的
+自动备份数据的数据库是 Aurora ，可以把数据备份到s3
 
-Beanstalk :without  provisioning or managing the underlying resources manually(deployment,lb,asg)
-rds for postgresql与arora有什么区别？
+CloudWatch Logs Insights:实时的分析查找
+CloudWatch Logs Stream: 实时的处理和监控
 
-s3也是serverless
+EFS （Amazon Elastic File System）是伴随ec2的，提供永久存储（327的题目解析中说的）
 
-KMS
-CloudHSM中新增一个辨析选项AWS Secrets Manager
+辨析
+Application Load Balancer 路由http流量的网关
+Gateway Load Balancer
+Network Load Balancer
+AWS Storage Gateway 混合存储，帮助本地程序访问云端数据
 
-Resource Access Managerr (AWS RAM) Share AWS resources that you own with other AWS accounts
+AWS Personal Health Dashboard  personalized view
+AWS Service Health Dashboard  general status
 
-211题
-225需要再研究一下
-227 rds会自动备份？备份是多az还是单az？
-241 lz除了cloudfront还有啥会用到？
-246 tam的全称是什么？
-248
+Lambda 执行时间最多是15分钟
+
+Cognito 用户中心，并可以通过社交帐号三方登录
+
+AWS Local Zones
+Edge locations 有什么区别？
+cdn用的是Edge locations
+
+六个支柱
+operational excellence
+  procedures workflows business value
+reliability 
+  不要猜容量 自动化变更infra
+316 321 322 324 327
+328 c为啥不对？
+   business-critical system down
+   production system down 有什么区别
+330 331
+333 关键词 caches the data locally
+343 342 347 349 350
