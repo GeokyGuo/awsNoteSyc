@@ -1,70 +1,84 @@
-occur = happen
-network intrusion system 网络入侵系统
-that are input/output (I/O) intensive. io密集型
-reduce the administrative overhead of the database.减少数据库的管理开销。
-fault-tolerant workloads that can handle interruptions by utilizing checkpoints and state-saving mechanisms容错工作负载，可以通过使用检查点和状态保存机制来处理中断 考点是spot instance
-perform periodic checkpoints in case of an outage.在出现停机时执行定期检查点。
-in case of 防止，万一发生
-backbone network 骨干网
-monolithic applications 整块应用
-microservices components微服务组件
-malicious activity 恶意活动
-break down AWS costs by the hour 按小时细分AWS成本
+s3 rds 邦迪az还是region
+是否是高可用
+遇见关键字tolet failure 选 spot instance
+
+CloudFront – S3 as an Origin 这一块需要再看一下视频？？？
+
+Aws local zone vs Edge locations
+Is it okay to say local zones are an extension of edge locations as they both focus on bringing services closer to the end-user. With local zones allowing more services such ec2 instances and edge locations focusing on CDN and route53
 
 
+Other Compute - Summary
+• Docker: container technology to run applications
+• ECS: run Docker containers on EC2 instances
+• Fargate:
+• Run Docker containers without provisioning the infrastructure
+• Serverless offering (no EC2 instances)
+• ECR: Private Docker Images Repository
+• Lightsail: predictable & low pricing for simple application & DB stacks
 
-密码丢了要retate
+• Batch: run batch jobs on AWS across managed EC2 instances（可以是spot instance）
+
+Lambda Summary
+• Lambda is Serverless, Function as a Service, seamless scaling, reactive
+• Lambda Billing:
+   By the time run x by the RAM provisioned
+   By the number of invocations
+• Language Support: many programming languages except (arbitrary) Docker
+• Invocation time: up to 15 minutes
+• Use cases:
+    Create Thumbnails for images uploaded onto S3
+    Run a Serverless cron job
+• Amazon API Gateway：向外暴露的api，可以作为lambda的入口
+
+ Serverless == FaaS (Function as a Service)
+ s3 DynamoDB Fargate Lambda API Gateway
 
 
-Server Message Block (SMB) protocol 关键字，选择
-Amazon FSx for Windows File Server
+Deployment - Summary
+• CloudFormation: (AWS only)
+    Infrastructure as Code, works with almost all of AWS resources
+    Repeat across Regions & Accounts
+• Beanstalk: (AWS only)
+    Platform as a Service (PaaS), limited to certain programming languages or Docker
+    Deploy code consistently with a known architecture: ex, ALB + EC2 + RDS
+• Systems Manager (hybrid): patch, configure and run commands at scale
+    SSM Session Manager：一种可以登录ec2的方式
+• OpsWorks (hybrid): managed Chef and Puppet in AWS（alternative to AWS SSM）
 
-programmatic case management through the AWS Support API是大于等于Business plan才支持的
+ Developer Services - Summary
+• CodeCommit: Store code in private git repository (version controlled)
+• CodeBuild: Build & test code in AWS（版本控制，build（测试、打包），deploy）
+• CodeDeploy: (hybrid): deploy & upgrade any application onto servers
+• CodePipeline: Orchestration of pipeline (from code to build to deploy)
+• CodeArtifact: Store software packages / dependencies on AWS
+• CodeStar: Unified view for allowing developers to do CICD and code
+• Cloud9: Cloud IDE (Integrated Development Environment) with collab
+• AWS CDK: Define your cloud infrastructure using a programming language（配合CloudFormation使用）
 
-s3和efs文件系统 是默认高可用的
-自动备份数据的数据库是 Aurora ，可以把数据备份到s3
+Global Applications in AWS - Summary
+• Global DNS: Route 53
+    Great to route users to the closest deployment with least latency
+    Great for disaster recovery strategies
+• Global Content Delivery Network (CDN): CloudFront
+    Replicate part of your application to AWS Edge Locations – decrease latency
+    Cache common requests – improved user experience and decreased latency
+    与Shield和WAF集成在一起
+• S3 Transfer Acceleration
+    加速s3与【edge location】，需要再看一下
+• AWS Global Accelerator
+    客户到edge location走公网，【edge location】到其他服务走aws内网
+• AWS Outposts
+    Deploy Outposts Racks in your own Data Centers to extend AWS services
+• AWS WaveLength
+    Brings AWS services to the edge of the 5G networks
+    Ultra-low latency applications
+• AWS Local Zones
+    Bring AWS resources (compute, database, storage, …) closer to your users
+    Good for latency-sensitive applications
+• Global Applications Architecture：
+    Single Region, Single AZ
+    Single Region, Multi AZ
+    Multi Region, Active-Passive
+    Multi Region, Active-Active
 
-CloudWatch Logs Insights:实时的分析查找
-CloudWatch Logs Stream: 实时的处理和监控
-
-EFS （Amazon Elastic File System）是伴随ec2的，提供永久存储（327的题目解析中说的）
-
-辨析
-Application Load Balancer 路由http流量的网关
-Gateway Load Balancer
-Network Load Balancer
-AWS Storage Gateway 混合存储，帮助本地程序访问云端数据
-372题需要辨析
-
-PostgreSQL在rds和aurora中都有，但是aurora中不是原生的PostgreSQL语句
-
-AWS Personal Health Dashboard  personalized view
-AWS Service Health Dashboard  general status
-
-Lambda 执行时间最多是15分钟
-
-Cognito 用户中心，并可以通过社交帐号三方登录
-
-AWS Local Zones
-Edge locations 有什么区别？
-cdn用的是Edge locations
-
-S3 Transfer Acceleration 用到了cdn技术，题目中的关键字backbone network
-
-Elasticity 这个单词描述的主体是 资源获取便利性
- 
-六个支柱
-operational excellence
-  procedures workflows business value
-reliability 
-  不要猜容量 自动化变更infra
-
-  
-316 321 322 324 327
-328 c为啥不对？
-   business-critical system down
-   production system down 有什么区别
-330 331
-333 关键词 caches the data locally
-343 342 347 349 350 352 356 368
-372 再辨析一下这几个
