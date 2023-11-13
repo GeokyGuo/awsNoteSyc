@@ -85,3 +85,7 @@ Global Applications in AWS - Summary
 
 https://zhuanlan.zhihu.com/p/512791644
 https://jayendrapatil.com/aws-certified-solutions-architect-associate-saa-c03-exam-learning-path/?ref=weii.dev
+
+https://www.aliyue.net/14233.html
+https://www.aliyue.net/17354.html
+https://shikey.com/2021/10/29/jiuzhang-2021.html
