@@ -82,3 +82,6 @@ Global Applications in AWS - Summary
     Multi Region, Active-Passive
     Multi Region, Active-Active
 
+
+https://zhuanlan.zhihu.com/p/512791644
+https://jayendrapatil.com/aws-certified-solutions-architect-associate-saa-c03-exam-learning-path/?ref=weii.dev
