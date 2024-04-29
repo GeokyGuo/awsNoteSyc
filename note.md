@@ -8,7 +8,7 @@ Aws local zone vs Edge locations
 Is it okay to say local zones are an extension of edge locations as they both focus on bringing services closer to the end-user. With local zones allowing more services such ec2 instances and edge locations focusing on CDN and route53
 
 
-Other Compute - Summary
+Other Compute - Summary test
 • Docker: container technology to run applications
 • ECS: run Docker containers on EC2 instances
 • Fargate:
